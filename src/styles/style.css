@@ -1,0 +1,75 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #131313;
+}
+
+.navbar {
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #ffffff;
+  z-index: 999;
+}
+
+.navbar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .logo .logo-img {
+  width: 60px;
+  height: 60px;
+  margin-left: 1rem;
+}
+
+.navbar .logo .logo-name {
+  margin: 1rem 0.5rem;
+}
+
+.navbar .menu-and-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .menu-and-search .menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 7em;
+  list-style: none;
+}
+
+.navbar .menu-and-search .menu-list li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar .menu-and-search .searchbox {
+  color: #ffffff;
+  margin: 1rem 0.5rem 1rem 1rem;
+  border-radius: 50px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  background-color: #131313;
+}
+/*# sourceMappingURL=style.css.map */

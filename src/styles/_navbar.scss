@@ -1,0 +1,44 @@
+.navbar {
+    background-color: $secondaryBlack;
+    display: flex;
+    justify-content: space-between;
+    color: $fontWhite;
+    z-index: 999;
+    .logo {
+        display: flex;
+        
+        .logo-img {
+            width: 60px;
+            height: 60px;
+            margin-left: 1rem;
+        }
+        .logo-name {
+            margin: 1rem 0.5rem;
+        }
+    }
+    
+    .menu-and-search {
+        display: flex;
+        justify-content: space-between;
+
+        .menu-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 7em;
+            list-style: none;
+            li a {
+                color: $fontWhite;
+                text-decoration: none;
+            }
+        }
+        .searchbox {
+            color: $fontWhite;
+            margin: 1rem 0.5rem 1rem 1rem;
+            border-radius: 50px;
+            border: 2px solid rgba(0,0,0,0.1);
+            background-color: $primaryBlack;
+        }
+
+    }
+}
