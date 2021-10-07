@@ -72,4 +72,31 @@ body {
   border: 2px solid rgba(0, 0, 0, 0.1);
   background-color: #131313;
 }
+
+.latest-movie-container .latest-movie-img img {
+  width: 88em;
+  height: 30em;
+}
+
+.latest-movie-container .latest-movie-description {
+  margin: 1rem 3rem;
+  position: absolute;
+  top: 13rem;
+}
+
+.latest-movie-container .latest-movie-description p {
+  width: 15em;
+}
+
+.latest-movie-container .latest-movie-description button {
+  background-color: #bb0505;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 10em;
+  height: 2em;
+}
+
+.latest-movie-container .latest-movie-description span {
+  color: #037503;
+}
 /*# sourceMappingURL=style.css.map */
