@@ -10,34 +10,7 @@ $fontWhite: #ffffff;
 body {
     background-color: $primaryBlack;
 }
-@import './navbar';
+@import './scss/navbar';
+@import './scss/latest';
+@import './scss/action';
 
-.latest-movie-container {
-
-    .latest-movie-img {
-        img {
-            width: 88em;
-            height: 30em;
-        }
-    }
-    .latest-movie-description {
-        margin: 1rem 3rem;
-        position: absolute;
-        top: 13rem;
-        p {
-            width: 15em;
-        }
-        button {
-            background-color: rgb(187, 5, 5);
-            color: $fontWhite;
-            border-radius: 5px;
-            width: 10em;
-            height: 2em;
-        }
-        span {
-            color: rgb(3, 117, 3);
-        }
-    }
-
-
-}
