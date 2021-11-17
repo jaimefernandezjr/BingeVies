@@ -12,13 +12,13 @@
     box-shadow: 0.2px 4px 5px rgba(255, 255, 255, .1);
     border-radius: 3px;
     width: 230px;
-    height: 315px;
+    height: 320px;
     margin: 1rem;
     overflow: hidden;
     &:hover .overview{
         position: relative;
         animation-name: moveup;
-        animation-duration: 1s;
+        animation-duration: 0.8s;
         transform: translateY(-100%);
         opacity: 1;
     }
@@ -30,15 +30,21 @@
     }
 
     .movie-info {
-        margin-top: 20px;
+        margin-top: 15px;
         width: 230px;
         display: flex;
+        align-items: center;
         justify-content: space-between;
-        font-weight: bold;
-        padding: 0 0.5rem 0 0.5rem;
-        padding-bottom: 20px;
+        padding: 0 1rem 0 0.5rem;
+        padding-bottom: 30px;
+        
+        .movie-title {
+            // background-color: green;
+            width: 180px;
+        }
         .rating {
             color: rgb(91, 219, 91);
+            font-weight: bold;
         }
 
     }
@@ -48,7 +54,7 @@
         color: black;
         width: 230px;
         opacity: 1;
-        
+        padding: 1rem;
         
     }
 
