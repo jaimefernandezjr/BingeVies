@@ -125,6 +125,17 @@ body {
   border-radius: 3px;
   width: 230px;
   margin-bottom: 20px;
+  position: absolute;
+}
+
+.movie-container:hover .overview {
+  -webkit-animation-name: moveup;
+          animation-name: moveup;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-transform: translateY(230%);
+          transform: translateY(230%);
+  opacity: 1;
 }
 
 .movie-container img {
@@ -152,11 +163,33 @@ body {
 
 .movie-container .overview {
   position: absolute;
+  top: 0;
+  left: 0;
   background-color: white;
   color: black;
-  margin-top: 20px;
   width: 230px;
-  -webkit-transform: translateY(-101%);
-          transform: translateY(-101%);
+  opacity: 0;
+}
+
+@-webkit-keyframes moveup {
+  0% {
+    -webkit-transform: translateY(300%);
+            transform: translateY(300%);
+  }
+  100% {
+    -webkit-transform: translateY(230%);
+            transform: translateY(230%);
+  }
+}
+
+@keyframes moveup {
+  0% {
+    -webkit-transform: translateY(300%);
+            transform: translateY(300%);
+  }
+  100% {
+    -webkit-transform: translateY(230%);
+            transform: translateY(230%);
+  }
 }
 /*# sourceMappingURL=style.css.map */
