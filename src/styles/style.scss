@@ -10,7 +10,7 @@ $fontWhite: #ffffff;
 body {
     background-color: $primaryBlack;
 }
-@import './scss/navbar';
-@import './scss/latest';
-@import './scss/action';
+@import './navbar';
+@import './feature';
+@import './movie';
 

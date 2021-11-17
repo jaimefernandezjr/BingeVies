@@ -73,22 +73,22 @@ body {
   background-color: #131313;
 }
 
-.latest-movie-container .latest-movie-img img {
+.feature-movie-container .feature-movie-img img {
   width: 88em;
   height: 30em;
 }
 
-.latest-movie-container .latest-movie-description {
+.feature-movie-container .feature-movie-description {
   margin: 1rem 3rem;
   position: absolute;
   top: 13rem;
 }
 
-.latest-movie-container .latest-movie-description p {
+.feature-movie-container .feature-movie-description p {
   width: 15em;
 }
 
-.latest-movie-container .latest-movie-description button {
+.feature-movie-container .feature-movie-description button {
   background-color: #bb0505;
   color: #ffffff;
   border-radius: 5px;
@@ -96,28 +96,67 @@ body {
   height: 2em;
 }
 
-.latest-movie-container .latest-movie-description span {
+.feature-movie-container .feature-movie-description span {
   color: #037503;
 }
 
-.action-movie-container {
-  color: #FFFFFF;
-}
-
-.action-movie-container .action-movies {
+.movie-genre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-x: auto;
-  margin: 0 2px 0, 2px;
-  border: 2px solid #ddd;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 20px 0 20px 0;
 }
 
-.action-movie-container .action-movies::-webkit-scrollbar {
-  width: 0;
-}
-
-.action-movie-container .action-movies h3 {
+.movie-genre h3 {
   color: white;
+}
+
+.movie-container {
+  color: white;
+  margin-left: 20px;
+  -webkit-box-shadow: 0.2px 4px 5px rgba(255, 255, 255, 0.1);
+          box-shadow: 0.2px 4px 5px rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  width: 230px;
+  margin-bottom: 20px;
+}
+
+.movie-container img {
+  width: 230px;
+  height: 250px;
+}
+
+.movie-container .movie-info {
+  margin-top: 20px;
+  width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: bold;
+  padding: 0 0.5rem 0 0.5rem;
+  padding-bottom: 20px;
+}
+
+.movie-container .movie-info .rating {
+  color: #5bdb5b;
+}
+
+.movie-container .overview {
+  position: absolute;
+  background-color: white;
+  color: black;
+  margin-top: 20px;
+  width: 230px;
+  -webkit-transform: translateY(-101%);
+          transform: translateY(-101%);
 }
 /*# sourceMappingURL=style.css.map */

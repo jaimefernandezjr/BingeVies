@@ -1,0 +1,47 @@
+.movie-genre {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 20px 0 20px 0;
+    h3 {
+        color: white;
+        
+    }
+}
+
+
+.movie-container {
+    color: white;
+    margin-left: 20px;
+    box-shadow: 0.2px 4px 5px rgba(255, 255, 255, .1);
+    border-radius: 3px;
+    width: 230px;
+    margin-bottom: 20px;
+    img {
+        width: 230px;
+        height: 250px;
+    }
+
+    .movie-info {
+        margin-top: 20px;
+        width: 230px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        padding: 0 0.5rem 0 0.5rem;
+        padding-bottom: 20px;
+        .rating {
+            color: rgb(91, 219, 91);
+        }
+
+    }
+
+    .overview {
+        position: absolute;
+        background-color: white;
+        color: black;
+        margin-top: 20px;
+        width: 230px;
+        transform: translateY(-101%);
+    }
+}
