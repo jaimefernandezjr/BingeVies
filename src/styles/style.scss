@@ -1,14 +1,17 @@
 $primaryBlack: #131313;
 $secondaryBlack: #000000;
 $fontWhite: #ffffff;
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 body {
     background-color: $primaryBlack;
+    width: 100%;
+    overflow-x: hidden;
 }
 @import './navbar';
 @import './feature';

@@ -1,22 +1,23 @@
-.main {
+#main {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;    
+    flex-wrap: wrap; 
+    // background-color: lightgreen;   
 
 }
 
-
 .movie-container {
+    // background-color: lightblue;
     color: white;
-    box-shadow: 0.2px 4px 5px rgba(255, 255, 255, .1);
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, .1);
     border-radius: 3px;
-    width: 230px;
+    width: 260px;
     height: 320px;
     margin: 1rem;
     overflow: hidden;
     &:hover .overview{
-        position: relative;
+        // position: relative;
         animation-name: moveup;
         animation-duration: 0.8s;
         transform: translateY(-100%);
@@ -27,9 +28,10 @@
     img {
         width: 230px;
         height: 250px;
+        // margin: 0 auto;
     }
 
-    .movie-info {
+    #movie-info {
         margin-top: 15px;
         width: 230px;
         display: flex;
