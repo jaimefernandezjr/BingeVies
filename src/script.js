@@ -5,10 +5,11 @@ const IMG_URL = 'https://image.tmdb.org/t/p/w500';
 const searchURL = BASE_URL + '/search/movie?'+API_KEY;
 
 const main = document.getElementById('main');
-const movieContainer = document.getElementById('movie-container');
 const movieInfo = document.getElementById('movie-info');
 const form = document.getElementById('form');
 const searchbox = document.getElementById('searchbox');
+const genre = document.getElementById('genre');
+const genreList = document.getElementById('genre-list');
 
 //fetch data
 let getData = (url) => {
@@ -20,7 +21,6 @@ let getData = (url) => {
             reject(new Error("can't fetch data"));
         });
     });
-    
 }
 
 //display movies
@@ -29,25 +29,37 @@ async function displayMovies(url) {
         let fetchedData = await getData(url);
         console.log(fetchedData);
         fetchedData.forEach(movie => {
-            const { title, poster_path, vote_average, overview } = movie;
+            const { title, poster_path, vote_average } = movie;
             const movieElement = document.createElement('div');
             movieElement.classList.add("movie-container");
             movieElement.innerHTML = `
-                <div class="movie-container">
-                    <img id="movie-poster" src="${IMG_URL + poster_path}" alt="${title}">
-                    <div id="movie-info">
-                        <div class="movie-title">${titleShortener(title)}</div>
-                        <span class="rating" style="color:${ratingColors(vote_average)}">${vote_average}</span>
-                    </div>
+                <img id="movie-poster" src="${IMG_URL + poster_path}" alt="${title}">
+                <div id="movie-info">
+                    <div class="movie-title">${titleShortener(title)}</div>
+                    <span class="rating" style="color:${ratingColors(vote_average)}">${vote_average}</span>
                 </div>
             `;
-
+            
             main.appendChild(movieElement);
         });
+
+        if(!main.hasChildNodes()){
+            main.innerHTML = `
+            <h2 style="color:white; padding-top: 150px" id="cant-find-error-msg"> It seems like we can't find your movie :( </h2>
+            `
+        }
+
+        displayFooter();
     } catch(error){
         console.log(error);
     }
-    
+}
+
+function displayFooter(){
+    const footer = document.createElement('footer');
+    footer.innerHTML = `
+        <p>©Jaime Fernandez - 2021</p>
+    `;
 }
 
 // utility functions
@@ -75,7 +87,6 @@ function ratingColors(vote_average) {
 
 displayMovies(API_URL);
 
-// displayMovies(searchURL+'&query='+'rock');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -87,7 +98,11 @@ form.addEventListener('submit', (e) => {
     } else {
         displayMovies(API_URL);
     }
-})
+});
+
+
+
+
 
 
 

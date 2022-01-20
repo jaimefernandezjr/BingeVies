@@ -1,11 +1,25 @@
 $primaryBlack: #131313;
 $secondaryBlack: #000000;
 $fontWhite: #ffffff;
+
+@mixin dimensions($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flexAlignment($display, $justify, $alignItems) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $alignItems;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -14,6 +28,6 @@ body {
     overflow-x: hidden;
 }
 @import './navbar';
-@import './feature';
 @import './movie';
+
 
