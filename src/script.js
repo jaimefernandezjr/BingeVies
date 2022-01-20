@@ -60,6 +60,7 @@ function displayFooter(){
     footer.innerHTML = `
         <p>©Jaime Fernandez - 2021</p>
     `;
+    main.appendChild(footer);
 }
 
 // utility functions
